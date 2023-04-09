@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+.header {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    background-color: rgb(1, 1, 41);
+    color: white;
+    padding: 32px;
+    border-bottom: 4px solid yellow;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 20px;
+    max-width: 1400px;
+}
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.gallery ::after {
+    content: "";
+    width: 350px;
+}
+
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(1, 1, 56);
+    margin: 20px 0;
+}
